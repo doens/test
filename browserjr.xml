@@ -1,0 +1,288 @@
+<animations xmlns="http://esheep.petrucci.ch/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://esheep.petrucci.ch/ https://raw.githubusercontent.com/Adrianotiger/desktopPet/master/Resources/animations.xsd">
+3. <header>
+4. <author>Adriano</author>
+5. <title>Browser Jr.</title>
+6. <version>0.2</version>
+7. <info>Test animation, with Browser walking on the screen![br]Image from [link:http://kingasylus91.deviantart.com/]</info>
+8. <application>1</application>
+9. <icon>icon</icon>
+10. <petname>Browser Jr.</petname>
+11. </header>
+12. <image>
+13. <tilesx>16</tilesx>
+14. <tilesy>12</tilesy>
+15. <png>0</png>
+16. <transparency>Magenta</transparency>
+17. </image>
+18. <spawns>
+19. <spawn probability="100" id="1">
+20. <x>screenW-1</x>
+21. <y>areaH-imageH</y>
+22. <next>1</next>
+23. </spawn>
+24. </spawns>
+25. <animations>
+26. <animation id="1">
+27. <name>drag</name>
+28. <start>
+29. <x>0</x>
+30. <y>0</y>
+31. <interval>50</interval>
+32. <offsety>0</offsety>
+33. <opacity>1.0</opacity>
+34. </start>
+35. <end>
+36. <x>0</x>
+37. <y>0</y>
+38. <interval>50</interval>
+39. <offsety>0</offsety>
+40. <opacity>1.0</opacity>
+41. </end>
+42. <sequence repeat="0" repeatfrom="0">
+43. <frame>0</frame>
+44. <frame>1</frame>
+45. <next probability="100" only="none">2</next>
+46. </sequence>
+47. </animation>
+48. <animation id="2">
+49. <name>walk</name>
+50. <start>
+51. <x>-2</x>
+52. <y>0</y>
+53. <interval>100</interval>
+54. <offsety>3</offsety>
+55. <opacity>1.0</opacity>
+56. </start>
+57. <end>
+58. <x>-2</x>
+59. <y>0</y>
+60. <interval>100</interval>
+61. <offsety>3</offsety>
+62. <opacity>1.0</opacity>
+63. </end>
+64. <sequence repeat="5" repeatfrom="0">
+65. <frame>0</frame>
+66. <frame>1</frame>
+67. <frame>2</frame>
+68. <frame>3</frame>
+69. <frame>4</frame>
+70. <frame>5</frame>
+71. <frame>6</frame>
+72. <frame>7</frame>
+73. <frame>8</frame>
+74. <frame>9</frame>
+75. <frame>10</frame>
+76. <frame>11</frame>
+77. <next probability="98" only="none">2</next>
+78. <next probability="30" only="none">7</next>
+79. </sequence>
+80. <border>
+81. <next probability="100" only="none">3</next>
+82. </border>
+83. <gravity>
+84. <next probability="100" only="window">5</next>
+85. </gravity>
+86. </animation>
+87. <animation id="3">
+88. <name>rotate1</name>
+89. <start>
+90. <x>0</x>
+91. <y>0</y>
+92. <interval>100</interval>
+93. <offsety>2</offsety>
+94. <opacity>1.0</opacity>
+95. </start>
+96. <end>
+97. <x>0</x>
+98. <y>0</y>
+99. <interval>100</interval>
+100. <offsety>2</offsety>
+101. <opacity>1.0</opacity>
+102. </end>
+103. <sequence repeat="0" repeatfrom="0">
+104. <frame>16</frame>
+105. <frame>17</frame>
+106. <frame>18</frame>
+107. <frame>19</frame>
+108. <action>flip</action>
+109. <next probability="100" only="none">4</next>
+110. </sequence>
+111. </animation>
+112. <animation id="4">
+113. <name>rotate2</name>
+114. <start>
+115. <x>0</x>
+116. <y>0</y>
+117. <interval>100</interval>
+118. <offsety>2</offsety>
+119. <opacity>1.0</opacity>
+120. </start>
+121. <end>
+122. <x>0</x>
+123. <y>0</y>
+124. <interval>100</interval>
+125. <offsety>2</offsety>
+126. <opacity>1.0</opacity>
+127. </end>
+128. <sequence repeat="0" repeatfrom="0">
+129. <frame>19</frame>
+130. <frame>18</frame>
+131. <frame>17</frame>
+132. <frame>16</frame>
+133. <next probability="100" only="none">2</next>
+134. </sequence>
+135. </animation>
+136. <animation id="5">
+137. <name>fall</name>
+138. <start>
+139. <x>0</x>
+140. <y>8</y>
+141. <interval>20</interval>
+142. <offsety>0</offsety>
+143. <opacity>1.0</opacity>
+144. </start>
+145. <end>
+146. <x>0</x>
+147. <y>8</y>
+148. <interval>20</interval>
+149. <offsety>0</offsety>
+150. <opacity>1.0</opacity>
+151. </end>
+152. <sequence repeat="100" repeatfrom="0">
+153. <frame>21</frame>
+154. <next probability="100" only="none">5</next>
+155. </sequence>
+156. <border>
+157. <next probability="100" only="none">6</next>
+158. </border>
+159. </animation>
+160. <animation id="6">
+161. <name>boing</name>
+162. <start>
+163. <x>0</x>
+164. <y>0</y>
+165. <interval>50</interval>
+166. <offsety>3</offsety>
+167. <opacity>1.0</opacity>
+168. </start>
+169. <end>
+170. <x>0</x>
+171. <y>0</y>
+172. <interval>50</interval>
+173. <offsety>3</offsety>
+174. <opacity>1.0</opacity>
+175. </end>
+176. <sequence repeat="0" repeatfrom="0">
+177. <frame>23</frame>
+178. <frame>24</frame>
+179. <frame>25</frame>
+180. <frame>26</frame>
+181. <frame>27</frame>
+182. <frame>28</frame>
+183. <frame>29</frame>
+184. <next probability="100" only="none">2</next>
+185. </sequence>
+186. </animation>
+187. <animation id="7">
+188. <name>shoot1</name>
+189. <start>
+190. <x>0</x>
+191. <y>0</y>
+192. <interval>50</interval>
+193. <offsety>0</offsety>
+194. <opacity>1.0</opacity>
+195. </start>
+196. <end>
+197. <x>0</x>
+198. <y>0</y>
+199. <interval>50</interval>
+200. <offsety>0</offsety>
+201. <opacity>1.0</opacity>
+202. </end>
+203. <sequence repeat="10" repeatfrom="1">
+204. <frame>32</frame>
+205. <frame>33</frame>
+206. <frame>34</frame>
+207. <frame>35</frame>
+208. <frame>36</frame>
+209. <next probability="100" only="none">8</next>
+210. </sequence>
+211. </animation>
+212. <animation id="8">
+213. <name>shoot2</name>
+214. <start>
+215. <x>0</x>
+216. <y>0</y>
+217. <interval>100</interval>
+218. <offsety>0</offsety>
+219. <opacity>1.0</opacity>
+220. </start>
+221. <end>
+222. <x>0</x>
+223. <y>0</y>
+224. <interval>1000</interval>
+225. <offsety>0</offsety>
+226. <opacity>1.0</opacity>
+227. </end>
+228. <sequence repeat="0" repeatfrom="0">
+229. <frame>37</frame>
+230. <frame>38</frame>
+231. <next probability="100" only="none">2</next>
+232. </sequence>
+233. </animation>
+234. <animation id="9">
+235. <name>bullet1</name>
+236. <start>
+237. <x>-2</x>
+238. <y>0</y>
+239. <interval>20</interval>
+240. <offsety>0</offsety>
+241. <opacity>1.0</opacity>
+242. </start>
+243. <end>
+244. <x>-10</x>
+245. <y>0</y>
+246. <interval>20</interval>
+247. <offsety>0</offsety>
+248. <opacity>1.0</opacity>
+249. </end>
+250. <sequence repeat="10" repeatfrom="0">
+251. <frame>40</frame>
+252. <frame>40</frame>
+253. <frame>40</frame>
+254. <next probability="100" only="none">10</next>
+255. </sequence>
+256. </animation>
+257. <animation id="10">
+258. <name>bullet2</name>
+259. <start>
+260. <x>-10</x>
+261. <y>0</y>
+262. <interval>20</interval>
+263. <offsety>0</offsety>
+264. <opacity>1.0</opacity>
+265. </start>
+266. <end>
+267. <x>-10</x>
+268. <y>0</y>
+269. <interval>20</interval>
+270. <offsety>0</offsety>
+271. <opacity>0.2</opacity>
+272. </end>
+273. <sequence repeat="0" repeatfrom="0">
+274. <frame>41</frame>
+275. <frame>41</frame>
+276. <frame>41</frame>
+277. <next probability="100" only="none">10</next>
+278. </sequence>
+279. </animation>
+280. </animations>
+281. <childs>
+282. <child animationid="8">
+283. <x>imageX</x>
+284. <y>imageY</y>
+285. <next>9</next>
+286. </child>
+287. </childs>
+288. </animations>
+289. 

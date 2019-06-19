@@ -1,0 +1,12 @@
+
+{
+  "pets" : 
+  [
+    {
+      "name" : "browser",
+      "file" : "browserjr.xml",
+      "author" : "Adriano Petrucci"
+    },
+
+  ]
+}
