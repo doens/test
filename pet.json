@@ -1,12 +1,9 @@
-
 {
-  "pets" : 
-  [
+  "pets" : [
     {
-      "name" : "browser",
-      "file" : "browserjr.xml",
-      "author" : "Adriano Petrucci"
-    },
-
+      "folder" : "browserjr",
+      "author" : "Adriano Petrucci",
+      "lastupdate" : "2019-02-21"
+    }
   ]
 }
